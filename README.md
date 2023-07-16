@@ -200,13 +200,26 @@ Mathematical notation is enabled by [KaTeX](https://katex.org/).
 
 ### 3.5 Hidden Post Summary in Home Page 
 
-To hidden post summary in home page, you could set `hiddenPostSummaryInHomePage` to `true`, default is `false`.
+To hide the post summary on the home page, you set `hiddenPostSummaryInHomePage` to `true`, default is `false`.
 
 For example:
 
 ```yaml
 hiddenPostSummaryInHomePage: true
 ```
+
+### 3.6 Hide 'Archive' and 'Tags' in Navigation
+
+To hide the 'Archive' and 'Tags' in navigation, you set `enableTags` or `enableArchive` to `true`, default is `false`.
+
+For example:
+
+```yaml
+params:
+  enableTags: false
+  enableArchive: false
+```
+
 
 ## License
 

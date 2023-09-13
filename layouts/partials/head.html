@@ -24,8 +24,8 @@
 
 <link rel="shortcut icon" href="{{ "/images/favicon.ico" | relURL }}" type="image/x-icon" />
 
-{{ if and (hugo.IsProduction) (.Site.Params.googleAnalyticsID) }}
-  {{ partial "analytics-gtag.html" . }}
+{{ if .Site.Params.enableGoogleAnalytics }} 
+  {{ template "_internal/google_analytics.html" . }}
 {{ end }}
 
 {{ if or .Params.math .Site.Params.math }}
